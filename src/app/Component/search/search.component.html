@@ -1,0 +1,51 @@
+<div class="search-wrapper">
+  <div class="search-box" [class.mat-elevation-z2]="true">
+    <mat-toolbar>
+      <div class="search-box">
+        <mat-icon
+          (click)="back()"
+          class="back-icon"
+          aria-hidden="false"
+          aria-label="Example user verified icon"
+          >arrow_back</mat-icon
+        >
+        <input
+          type="search"
+          class="search-input"
+          placeholder="Search for brands and products"
+          id="searchbox"
+          [(ngModel)]="query"
+          (search)="search()"
+        />
+        <mat-icon matRipple
+          (click)="openVoiceWinodw()"
+          class="back-icon"
+          aria-hidden="false"
+          aria-label="mic"
+          >mic</mat-icon
+        >
+      </div>
+    </mat-toolbar>
+  </div>
+  <div class="history-list">
+    <mat-list role="list">
+      <mat-list-item matRipple role="listitem" *ngFor="let item of history"
+        ><div class="history-item-wrapper" (click)="openHistory(item)">
+          <mat-icon
+            class="history-icon"
+            aria-hidden="false"
+            aria-label="history"
+            >history</mat-icon
+          >
+          <span class="history-desc">
+            {{ item }}
+          </span>
+
+          <mat-icon class="open-history" aria-hidden="false" aria-label="open"
+            >call_received</mat-icon
+          >
+        </div></mat-list-item
+      >
+    </mat-list>
+  </div>
+</div>

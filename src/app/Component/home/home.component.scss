@@ -1,0 +1,24 @@
+.wrapper{
+  display: flex;
+  flex-direction: column;
+  padding-top: 76px;
+}
+app-horizontal-list{
+  height: 100%;
+}
+.top-spacer {
+  height: 50px;
+}
+.slider {
+  height: auto;
+  margin: 10px 5px;
+  padding: 2px;
+}
+
+.top-categories{
+  margin-top: 20px;
+  height: 70px;
+}
+.containAll{
+margin: auto;
+}

@@ -1,0 +1,35 @@
+.dealwrapper {
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  width: auto;
+  height: auto;
+  padding-bottom: 5px;
+  background: #909090;
+  background-image: url('../../../assets/back.jpg');
+  background-size: cover;
+  background-repeat: no-repeat, repeat;
+  background-color: #cccccc;
+}
+.list-wrapper {
+  display: flex;
+  flex-direction: row;
+  overflow-x: auto;
+}
+.deal-heading-wrapper {
+  padding: 10px;
+  display: flex;
+}
+.viewall {
+  margin-left: auto;
+  color: #007bff;
+}
+.title {
+  font-size: 16px;
+  font-weight: 500;
+  color: #ffffff;
+  width: 60%;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}

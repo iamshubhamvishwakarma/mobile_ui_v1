@@ -1,0 +1,84 @@
+.item-wrapper {
+  display: flex;
+  flex-direction: column;
+  font-size: 13px;
+  padding: 10px;
+  width: 220px;
+}
+
+.content-wrapper {
+  display: flex;
+  flex-direction: column;
+}
+.deal-title {
+  font-size: 15px;
+  height: 38px;
+  font-weight: 500;
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+
+  -webkit-box-orient: vertical;
+}
+.offer-price {
+  font-weight: 600;
+}
+.price {
+  margin-left: 15px;
+  font-weight: 400;
+  color: #d1d1d1;
+  text-decoration: line-through;
+}
+.source,
+.price,
+.deal-title {
+  margin-bottom: 5px;
+}
+.image-wrapper {
+  text-align: center;
+}
+.image-wrapper img {
+  height: auto;
+  max-height: 200px;
+  width: auto;
+  padding: 10px 5px;
+}
+.visit {
+  padding-top: 5px;
+  height: 30px;
+  text-align: center;
+  font-size: 15px;
+  font-weight: 500;
+}
+.options {
+  display: flex;
+  padding: 5px 0px;
+}
+// .options span {
+//   margin: auto;
+//   padding-top: 5px;
+//   height: 30px;
+//   width: 30px;
+//   border-radius: 50%;
+
+//   text-align: center;
+// }
+mat-icon {
+  height: 14px;
+  width: 14px;
+}
+
+.fev-btn {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+}
+.menu {
+  margin-left: auto;
+}
+button {
+  outline: none;
+}
+.price-div {
+  display: flex;
+}

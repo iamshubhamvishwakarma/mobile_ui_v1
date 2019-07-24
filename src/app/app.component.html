@@ -1,0 +1,35 @@
+<div class="wrapper">
+  
+  <mat-sidenav-container
+    class="example-container"
+    (backdropClick)="close('backdrop')"
+  >
+    <mat-sidenav
+      class="side-nav-cc"
+      #sidenav
+      (keydown.escape)="close('escape')"
+      disableClose
+    >
+      <div class="sidenav-options">
+        <div class="app-image"></div>
+        <div class="options">
+          <div class="women">
+            <span></span>
+            <span></span>
+          </div>
+        </div>
+      </div>
+    </mat-sidenav>
+
+    <mat-sidenav-content>
+      <div class="router-wrapper  " (scroll)="scrollHandler($event)">
+        <div class="search-component"  [ngClass]="{'hide': !isVisible}">
+          <app-navbar (navAction)="toggleSideNav($event)"></app-navbar>
+        </div>
+        <div class="body-content">
+          <router-outlet></router-outlet>
+        </div>
+      </div>
+    </mat-sidenav-content>
+  </mat-sidenav-container>
+</div>

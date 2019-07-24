@@ -1,0 +1,45 @@
+.view-all-wrapper {
+  width: 100%;
+  :after {
+    content: '';
+    display: table;
+    clear: both;
+ 
+  }
+}
+.filter {
+  top: 2px;
+  z-index: 10;
+  margin-top: 76px;
+}
+cdk-virtual-scroll-viewport {
+  height: 100vh;
+}
+.filter-options {
+  display: flex;
+  flex-direction: row;
+  margin: auto;
+}
+.filter-options div {
+  margin: 0 20px;
+  padding: 5px;
+}
+.icon {
+  margin: 0px 10px;
+}
+
+.sort,
+.filter {
+  font-size: 16px;
+  margin: 0px 5px;
+}
+.mat-divider {
+  margin: 10px 0px;
+}
+.items {
+  float: left;
+  width: 50%;
+  height: 300px;
+  margin-top: 10px ;
+  margin-bottom: 10px;
+}

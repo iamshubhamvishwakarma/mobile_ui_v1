@@ -1,0 +1,36 @@
+.container {
+  margin: auto;
+}
+.grid-wrapper {
+  width: auto;
+  height: auto;
+  padding-bottom: 5px;
+  background: #909090;
+  background-image: url('../../../assets/back.jpg');
+  background-size: cover;
+  background-repeat: no-repeat, repeat;
+  background-color: #cccccc;
+}
+.item-row {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+}
+.item {
+  width: 50%;
+  margin: 5px;
+}
+.viewall {
+  margin-left: auto;
+  color: #007bff;
+}
+.heading {
+  padding: 10px 10px;
+  font-size: 17px;
+  font-weight: 500;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  color: #ffffff;
+  display: flex;
+  flex-direction: row;
+}

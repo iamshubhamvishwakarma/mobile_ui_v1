@@ -1,0 +1,21 @@
+<div class="dealwrapper card" *ngIf="data">
+  <div class="deal-heading-wrapper">
+    <span class="title">{{ data.title }}</span>
+    <span class="viewall">
+      <a [routerLink]="['/viewall/', data.viewallurl]" mat-raised-button
+        ><span style="color:#007bff "> View all</span></a
+      ></span
+    >
+  </div>
+  <div class="list-wrapper">
+    <app-horizontal-deal-items
+      [deal]="deal"
+      *ngFor="let deal of data.deals"
+    ></app-horizontal-deal-items>
+
+    <!-- <app-horizontal-deal-items
+      [deal]="deal"
+      *ngFor="let deal of deals"
+    ></app-horizontal-deal-items> -->
+  </div>
+</div>

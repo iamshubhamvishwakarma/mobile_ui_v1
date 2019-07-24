@@ -1,0 +1,42 @@
+<ng-container *ngIf="infinite | async as people">
+  <div class="filter card">
+    <mat-toolbar
+      ><div class="filter-options">
+        <div>
+          <span class="filter">Filter </span>
+          <span class="icon"><i class="fas fa-filter"></i></span>
+        </div>
+        <mat-divider [vertical]="true"></mat-divider>
+        <div>
+          <span class="sort">Sort </span
+          ><span class="icon"
+            ><mat-icon
+              aria-hidden="false"
+              aria-label="Example thumbs up SVG icon"
+              >sort</mat-icon
+            >
+          </span>
+        </div>
+      </div></mat-toolbar
+    >
+  </div>
+
+  <cdk-virtual-scroll-viewport
+    itemSize="150"
+    (scrolledIndexChange)="nextBatch($event, people[people.length - 1].name)"
+  >
+    <div class="view-all-wrapper">
+      <div class="view-all-wrapper">
+        <div class="items" *ngFor="let item of data">
+          <app-view-all-item [item]="item"> </app-view-all-item>
+        </div>
+      </div>
+      <!-- <div
+        *cdkVirtualFor="let p of people; let i = index; trackBy: trackByIdx"
+        class="animated lightSpeedIn"
+      >
+        <app-view-all-item></app-view-all-item>
+      </div> -->
+    </div>
+  </cdk-virtual-scroll-viewport>
+</ng-container>

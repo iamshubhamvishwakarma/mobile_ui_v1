@@ -1,0 +1,95 @@
+.item-wrapper {
+  display: flex;
+  flex-direction: column;
+  font-size: 13px;
+  padding: 10px;
+  width: auto;
+}
+
+.content-wrapper {
+  display: flex;
+  flex-direction: column;
+}
+.deal-title {
+  font-size: 13px;
+  height: 38px;
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  text-overflow: ellipsis;
+  -webkit-box-orient: vertical;
+}
+
+.price {
+  font-weight: 600;
+}
+.source,
+.price,
+.deal-title {
+  margin-bottom: 5px;
+}
+.image-wrapper {
+  text-align: center;
+  height: 150px;
+  width: auto;
+  position: relative;
+}
+.image-wrapper img {
+  height: auto;
+  width: auto;
+  max-height: 150px;
+  max-width: 140px;
+  padding: 10px 5px;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+}
+.visit {
+  padding-top: 5px;
+  height: 30px;
+  text-align: center;
+  font-size: 15px;
+  font-weight: 500;
+}
+.options {
+  display: flex;
+  padding: 5px 0px;
+}
+// .options span {
+//   margin: auto;
+//   padding-top: 5px;
+//   height: 30px;
+//   width: 30px;
+//   border-radius: 50%;
+
+//   text-align: center;
+// }
+mat-icon {
+  height: 14px;
+  width: 14px;
+}
+
+.fev-btn {
+  position: absolute;
+  top: 0px;
+  height: 30px;
+  width: 30px;
+  margin: auto;
+  border-radius: 50%;
+  margin-top: 5px;
+  margin-left: 5px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  left: 0px;
+}
+.menu {
+  margin-left: auto;
+}
+button {
+  outline: none;
+}

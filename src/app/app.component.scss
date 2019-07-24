@@ -1,0 +1,51 @@
+.nav-wrapper {
+  overflow: hidden;
+}
+mat-sidenav-content {
+  //overflow: hidden;
+}
+.nav-wrapper {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+.search-component {
+  position: fixed;
+  z-index: 100;
+  top: 0px;
+  margin: 0px 0px;
+  left: 0;
+  right: 0;
+  transition: all 300ms ease-in-out;
+}
+
+.side-nav-cc {
+  width: 50%;
+}
+.bottom-nav {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+}
+.body-content {
+}
+.sidenav-options {
+  display: flex;
+  flex-direction: column;
+}
+.app-image {
+  height: 100px;
+  width: auto;
+}
+.options {
+  padding: 10px;
+}
+.hide {
+  height: 0;
+  -ms-transform: translateY(-100px); /* IE 9 */
+  -webkit-transform: translateY(-100px); /* Safari 3-8 */
+  transform: translateY(-100px);
+}
+.mat-drawer-content {
+  overflow: hidden;
+}

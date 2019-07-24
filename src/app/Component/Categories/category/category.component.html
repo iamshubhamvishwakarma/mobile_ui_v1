@@ -1,0 +1,17 @@
+<div class="horizontal-catigory card">
+  <div class="catlist">
+    <div class="item" *ngFor="let item of items">
+      <div class="item-content">
+        <a [routerLink]="['/item.url']">
+          <div class="cat-logo">
+            <img [src]="item.image" alt="" />
+          </div>
+          <div class="title">
+            {{ item.title }}
+          </div>
+        </a>
+      </div>
+      <mat-divider [vertical]="true"></mat-divider>
+    </div>
+  </div>
+</div>

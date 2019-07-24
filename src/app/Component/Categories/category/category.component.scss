@@ -1,0 +1,26 @@
+.horizontal-catigory {
+  width: auto;
+  height: auto;
+}
+.catlist {
+  display: flex;
+  flex-direction: row;
+  white-space: nowrap;
+  overflow-x: scroll;
+}
+.item {
+  display: flex;
+  padding: 5px 0px;
+}
+
+.item-content {
+  padding: 5px 15px;
+  text-align: center;
+  font-size: 11px;
+}
+.title {
+  margin-top: 5px;
+}
+mat-divider {
+  margin: 5px 0px;
+}

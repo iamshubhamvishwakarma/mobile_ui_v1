@@ -1,0 +1,38 @@
+.social-wrapper {
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+  justify-content: center;
+}
+.social-options {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.social-options div {
+  margin: auto auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  border-radius: 50%;
+  font-size: 16px;
+  text-align: center;
+  height: 52px;
+  width: 52px;
+}
+.social-options i {
+  font-size: 26px;
+  z-index: 10;
+}
+.facebook {
+  color: #3b5998;
+}
+.whatsapp {
+  color: #50ca5e;
+}
+.instagram {
+  color: #c23b7e;
+}
+.telegram {
+  color: #0088cc;
+}

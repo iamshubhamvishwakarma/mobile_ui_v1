@@ -1,0 +1,80 @@
+// Custom Theming for Angular Material
+// For more information: https://material.angular.io/guide/theming
+@import '~@angular/material/theming';
+// Plus imports for other components in your app.
+// Include the common styles for Angular Material. We include this here so that you only
+// have to load a single css file for Angular Material in your app.
+// Be sure that you only ever include this mixin once!
+@include mat-core();
+
+// Define the palettes for your theme using the Material Design palettes available in palette.scss
+// (imported above). For each palette, you can optionally specify a default, lighter, and darker
+// hue. Available color palettes: https://material.io/design/color/
+$AngularMatarialExample-primary: mat-palette($mat-indigo);
+$AngularMatarialExample-accent: mat-palette($mat-pink, A200, A100, A400);
+$white: '#ffffff';
+// The warn palette is optional (defaults to red).
+$AngularMatarialExample-warn: mat-palette($mat-red);
+
+// Create the theme object (a Sass map containing all of the palettes).
+$AngularMatarialExample-theme: mat-light-theme(
+  $AngularMatarialExample-primary,
+  $AngularMatarialExample-accent,
+  $AngularMatarialExample-warn
+);
+
+// Include theme styles for core and each component used in your app.
+// Alternatively, you can import and @include the theme mixins for each component
+// that you are using.
+@include angular-material-theme($AngularMatarialExample-theme);
+
+html,
+body {
+  height: 100%;
+}
+* {
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+  -moz-box-sizing: border-box;
+  font-family: Roboto, 'Helvetica Neue', sans-serif;
+}
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.card {
+  box-shadow: 0 1px 6px 0 rgba(32, 33, 36, 0.28);
+  margin: 5px;
+  padding: 2px;
+  border-color: rgba(223, 225, 229, 0);
+  height: auto;
+  width: auto;
+}
+.spacer {
+  flex: 1 1 auto;
+}
+
+@keyframes icon_hover {
+  0% {
+    margin-right: 5px;
+  }
+  50% {
+    margin-right: 15px;
+  }
+  100% {
+    margin-right: 5px;
+  }
+}
+
+.row {
+  display: flex;
+  flex-direction: row;
+}
+.column {
+  display: flex;
+  flex-direction: column;
+}
+.center {
+  justify-content: center;
+}

@@ -1,0 +1,53 @@
+<div class="login-wrapper">
+  <div class="login-heading">
+    <div class="heading-top">
+      <span class="title">AMZO</span>
+      <span class="close" (click)="closeDialog($event)"
+        ><mat-icon aria-hidden="false" aria-label="Example home icon"
+          >close</mat-icon
+        >
+      </span>
+    </div>
+    <div class="heading-content"><span class="desc">
+      Please enter your details to continue
+    </span>
+    <img src="assets/login.png" alt="">
+  </div>
+  </div>
+  <div class="login-input">
+    <form class="example-form">
+      <mat-form-field class="input-username">
+        <input matInput placeholder="Mobile/ Email" />
+      </mat-form-field>
+
+      <mat-form-field class="input-password">
+        <input matInput placeholder="Password" />
+      </mat-form-field>
+      <div class="other-option">
+        <mat-checkbox color="primary">Remember me</mat-checkbox>
+        <a href="#">Forgot password</a>
+      </div>
+      <div class="login-btn">
+        <button mat-raised-button color="primary">Sign in</button>
+      </div>
+    </form>
+    <div class="social-login">
+      <i
+        [matRippleColor]="color[0]"
+        id="googleBtn1"
+        matRipple
+        class=" google fab fa-google"
+      ></i>
+      <i
+        [matRippleColor]="color[1]"
+        matRipple
+        class="facebook fab fa-facebook-f"
+      ></i>
+      <i
+        [matRippleColor]="color[2]"
+        matRipple
+        class="twitter fab fa-twitter"
+      ></i>
+    </div>
+  </div>
+</div>

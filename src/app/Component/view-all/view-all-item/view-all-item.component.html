@@ -1,0 +1,50 @@
+<div class="item-wrapper card">
+  <div class="image-wrapper">
+    <img [src]="item.image" alt="" />
+  </div>
+  <div class="content-wrapper">
+    <div class="deal-title">
+      <a href="#"> {{ item.title }}</a>
+    </div>
+    <div class="price">₹ {{ item.offerPrice }}</div>
+    <div class="source">Amazon.com</div>
+  </div>
+  <mat-divider></mat-divider>
+  <div class="options">
+    <button mat-raised-button (click)="openLink(item)" color="primary">
+      Visit
+    </button>
+    <button
+      class="menu"
+      mat-icon-button
+      [matMenuTriggerFor]="menu"
+      aria-label="Example icon-button with a menu"
+    >
+      <mat-icon>more_vert</mat-icon>
+    </button>
+    <mat-menu #menu="matMenu">
+      <button mat-menu-item>
+        <mat-icon>share</mat-icon>
+        <span>Share</span>
+      </button>
+      <button mat-menu-item>
+        <mat-icon>bookmarks</mat-icon>
+        <span>Bookmarks</span>
+      </button>
+      <button mat-menu-item>
+        <mat-icon>notifications_off</mat-icon>
+        <span>Disable alerts</span>
+      </button>
+    </mat-menu>
+    <!-- <button class="visit" mat-raised-button color="primary">Visit</button> -->
+  </div>
+
+  <mat-icon
+    class="fev-btn"
+    matRipple
+    aria-hidden="false"
+    (click)="saveThis(item)"
+    aria-label="Example home icon"
+    >favorite_border</mat-icon
+  >
+</div>

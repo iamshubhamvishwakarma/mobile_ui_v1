@@ -1,0 +1,17 @@
+.offer-wrapper {
+ 
+}
+.banner{
+    margin: auto auto;
+    text-align: center;
+    margin: 10px 0px;
+}
+.banner img {
+  height: auto;
+  width: 100%;
+
+}
+.deal-grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}

@@ -1,0 +1,18 @@
+<div class="wrapper  containAll" *ngIf="home_data">
+  <app-category></app-category>
+  <div class="slider card">
+    <app-slideshow [slideData]="home_data.home.slides"></app-slideshow>
+  </div>
+  <li *ngFor="let item of items | async">ad {{ item }}</li>
+  <app-grid-deals></app-grid-deals>
+  <app-single-banner></app-single-banner>
+  <app-login></app-login>
+  <app-join-social></app-join-social>
+  <app-horizontal-deals [data]="home_data.home.mobiles"></app-horizontal-deals>
+  <app-horizontal-deals [data]="home_data.home.men"></app-horizontal-deals>
+  <app-horizontal-deals [data]="home_data.home.women"></app-horizontal-deals>
+  <app-horizontal-deals
+    [data]="home_data.home.amazonoffer"
+  ></app-horizontal-deals>
+  <app-horizontal-deals [data]="home_data.home.myntra"></app-horizontal-deals>
+</div>

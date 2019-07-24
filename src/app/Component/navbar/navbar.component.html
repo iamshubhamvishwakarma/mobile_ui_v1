@@ -1,0 +1,55 @@
+<div class="search-wrapper card">
+  <mat-toolbar>
+    <div class="search-options">
+      <mat-icon
+        class="example-icon nav"
+        aria-hidden="false"
+        aria-label="menu"
+        (click)="navClicked()"
+        >menu</mat-icon
+      >
+      <span class="app-title">AMZO</span>
+
+      <!-- <div class="search-input">
+        <input
+          id="input-search"
+          class="spacer"
+          type="search"
+          placeholder="Search"
+          [(ngModel)]="value"
+        />
+      </div> -->
+      <div class="top-options">
+        <mat-icon
+          (click)="searchClick()"
+          matRipple
+          class="example-icon nav"
+          aria-hidden="false"
+          aria-label="menu"
+          >search</mat-icon
+        >
+        <mat-icon
+          matRipple
+          class="example-icon mic"
+          aria-hidden="false"
+          aria-label="mic"
+          >notifications_none</mat-icon
+        >
+        <mat-icon
+          matRipple
+          class="example-icon mic"
+          aria-hidden="false"
+          aria-label="mic"
+          >favorite_border</mat-icon
+        >
+        <mat-icon
+          matRipple
+          class="example-icon mic"
+          aria-hidden="false"
+          aria-label="mic"
+          >shopping_cart_outline</mat-icon
+        >
+      </div>
+    </div>
+  </mat-toolbar>
+</div>

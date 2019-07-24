@@ -1,0 +1,32 @@
+.site-wrapper {
+  display: flex;
+  overflow: hidden;
+  flex-direction: column;
+}
+
+.site-wrapper img {
+  padding: 10px;
+  height: auto;
+  width: 100%;
+  margin: 10px 0px;
+}
+.desc {
+  text-align: center;
+  padding: 10px 0px;
+}
+.card {
+  padding: 0px;
+}
+.coupon-code {
+  font-weight: 300;
+}
+.coupon-code span {
+  color: #17a2b8;
+}
+.hotdeal {
+  position: absolute;
+text-decoration: underline;
+  font-weight: 400;
+  color: red;
+  padding: 1px 5px;
+}
